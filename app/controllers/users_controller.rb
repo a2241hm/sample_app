@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     #@user = User.new(params[:user])    # 実装は終わっていないことに注意!
     
     @user = User.new(user_params)
-    if @user.save  # ==trueと指定する必要はない
+    if @user.save
       # Success(valid paramater)
       # GET "/users/#{@user.id}"
       flash[:success] = "Welcome to the Sample App!"
