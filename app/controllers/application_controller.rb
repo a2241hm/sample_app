@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-
-  def hello
-    render html: "hello, world!"
-  end
+  # SessionsHelperの便利メソッドがApplicationControllerでも使える。
+  include SessionsHelper
 end
